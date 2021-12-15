@@ -1,0 +1,83 @@
+/* || footer style for all html docs for this repo || */
+
+footer {
+    width: 100vw;
+    padding: 50px 50px 20px 50px;
+
+    background-color: black;
+    font-weight: bolder;
+    text-align: left;
+
+}
+
+
+
+footer .main-content {
+    margin: 5px auto;
+    display: flex;
+    justify-content: flex-start;
+}
+@media screen and (max-width: 550px) {
+    footer {
+        padding: 20px;
+    }
+    footer .main-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    footer .copyright-wrapper,
+    footer .connect-wrapper,
+    footer .nav {
+        margin: 15px auto;
+    }
+}
+footer .copyright-wrapper,
+footer .connect-wrapper,
+footer .nav {
+    width: 32%;
+    min-width: 150px;
+}
+footer li,
+footer h3,
+footer .line,
+footer .connect-link {
+    margin: 7px auto;
+}
+
+
+
+footer .connect-wrapper {
+    
+    max-width: 250px;
+}
+footer .connect-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    text-align: left;
+    border: 1px solid white;
+    transition: all 1s ease;
+}
+footer .connect-link .img-cont {
+    width: 25px;
+    height: 25px;
+}
+footer .connect-link:hover {
+    padding-right: 50px;
+}
+
+
+
+footer .socials {
+    height: 20px;
+    margin-top: 40px;
+    opacity: .7;
+    display: flex;
+    justify-content: center;
+}
+.socials a {
+    display: inline-block;
+    margin: 0 15px;
+}

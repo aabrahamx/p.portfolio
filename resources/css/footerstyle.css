@@ -1,26 +1,24 @@
-/* || footer style for all html docs for this repo || */
+/* || footer-style for all html docs for this repo || */
 
 footer {
     width: 100vw;
     padding: 50px 50px 20px 50px;
-
-    background-color: black;
-    font-weight: bolder;
     text-align: left;
-
+    font-weight: bolder;
+    background-color: black;
 }
 
 
 
+
+/* || the upper section of footer*/
 footer .main-content {
     margin: 5px auto;
     display: flex;
     justify-content: flex-start;
 }
 @media screen and (max-width: 550px) {
-    footer {
-        padding: 20px;
-    }
+    footer {padding: 20px;}
     footer .main-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -28,56 +26,66 @@ footer .main-content {
     }
     footer .copyright-wrapper,
     footer .connect-wrapper,
-    footer .nav {
-        margin: 15px auto;
-    }
+    footer .nav {margin: 15px auto;}
 }
 footer .copyright-wrapper,
-footer .connect-wrapper,
-footer .nav {
+footer .nav,
+footer .connect-wrapper {
     width: 32%;
     min-width: 150px;
 }
-footer li,
-footer h3,
 footer .line,
+footer li, 
+footer h3, 
 footer .connect-link {
-    margin: 7px auto;
-}
-
-
-
-footer .connect-wrapper {
-    
-    max-width: 250px;
-}
-footer .connect-link {
+    height: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
+}
+.copyright-wrapper .line1,
+.copyright-wrapper .line3 {
+    opacity: .5;
+    font-size: .8rem;
+}
+footer h3, 
+footer li a:hover,
+footer .connect-link:hover {
+    color: #FE7203;
+}
+footer li a, 
+footer .connect-link {
+    transition: all .4s ease;
+}
+footer .connect-link {
+    width: 150px;
+    padding-right: 50px;
     text-align: left;
-    border: 1px solid white;
-    transition: all 1s ease;
+    justify-content: space-between;
 }
 footer .connect-link .img-cont {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }
 footer .connect-link:hover {
-    padding-right: 50px;
+    padding-right: 35px;
 }
 
 
 
+
+/* || bottom section of footer */
 footer .socials {
-    height: 20px;
     margin-top: 40px;
-    opacity: .7;
+    height: 20px;
     display: flex;
     justify-content: center;
 }
 .socials a {
     display: inline-block;
     margin: 0 15px;
+    opacity: .5;
+    transition: all .1s linear;
+}
+.socials a:hover {
+    opacity: 1;
 }

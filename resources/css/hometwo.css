@@ -6,6 +6,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     text-align: center;
+    background: black;
     color: lightgrey;
 }
 a {
@@ -41,23 +42,42 @@ img {
 
 
 
-
-
-
-
 header {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 1px 0 0 0;
     margin: -1px auto 0 auto;
     background-color: #FE7202;
 }
+/*.svg-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    animation: svganimation 10s ease-in-out infinite;
+}
+.svg-cont img {
+    width: 100%;
+}
+@keyframes svganimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.95);
+    }   
+    100% {
+        transform: scale(1);
+    }
+}*/
 .intro-card {
+    position: relative;
+    z-index: 2;
     width: 60vh;
     height: 40vh;
     margin: 20vh auto;
     padding: 30px;
-    padding-top: 20vh;
     color: #0C1B35;
     background-color: #04D37C;
     box-shadow: 10px 10px #0C1B35;
@@ -93,24 +113,126 @@ header {
 
 
 main {
-    height: 100vh;
-    width: 100vw;
+
+    padding: 100px 50px;
     background-color: #0C1B35;
 }
-.background-main {
-    z-index: 3;
-    position: absolute;
-    top: 85vh;
+
+.skill-cont h2 {
+    color: #FE7202;
+    font-weight: bold;
+}
+.skill-cont .img-wrapper {
+    min-height: 50px;
+    margin: 40px auto; /* you might wanna decrease this by 10px*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.skill-cont .img-wrapper .img-cont {
+    margin: 7px 10px; /* this affects 7 lines above */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid darkgrey;
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+.img-wrapper .one {
+    background: url(https://img.icons8.com/ios/50/000000/html-5--v2.png);
+}
+.img-wrapper .two {
+    background: url(https://img.icons8.com/ios/50/000000/css3.png);
+}
+.img-wrapper .three {
+    background: url(https://img.icons8.com/ios/50/000000/javascript--v1.png);
+}
+.img-wrapper .four {
+    background: url(https://img.icons8.com/ios/50/000000/jquery.png);
+}
+.img-wrapper .five {
+    background: url(https://img.icons8.com/ios/50/000000/sass.png);
+}
+.img-wrapper .six {
+    background: url(https://img.icons8.com/ios/50/000000/react-native--v1.png);
+}
+.img-wrapper .seven {
+    background: url(https://img.icons8.com/ios/50/000000/redux.png);
+}
+.img-wrapper .eight {
+    background: url(https://img.icons8.com/carbon-copy/100/000000/canva.png);
+}
+.img-wrapper .nine {
+    background: url(https://img.icons8.com/windows/64/000000/bootstrap.png);
+}
+.img-wrapper .ten {
+    background: url(https://img.icons8.com/ios/64/000000/git.png);
+}
+.img-wrapper .eleven {
+    background: url(https://img.icons8.com/ios/50/000000/figma--v1.png);
+}
+.img-wrapper .twelve {
+    background: url(https://img.icons8.com/ios/50/000000/adobe-xd--v1.png);
+}
+.img-wrapper .thirteen {
+    background: url(https://img.icons8.com/ios/50/000000/github--v1.png);
 }
 
 
+main .catelog-cont {
+
+}
+main .pagelink {
+    display: inline-block;
+    height: 350px;
+    width: 300px;
+    margin: 100px 100px;
+    padding: 10px;
+    background: #FE7202;
+    border: 1px solid black;
+    transition: all .4s ease-in-out;
+}
+@media screen and (max-width: 550px) {
+    main .pagelink {
+        height: 275px;
+        width: 225px;
+        margin: 75px auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+}
+main .pagelink:hover {
+    transform: translateY(-20px);
+    box-shadow: 10px 10px #04D37C;
+}
 
 
-
-
-
-
-
-
-
-
+.pagelink .title {
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    color: black;
+    border: 1px solid black;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.pagelink .title img {
+    height: 25px;
+    margin-left: 10px;
+}
+.pagelink .svg-cont {
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+.pagelink .svg-cont img {
+    width: 100%;
+}

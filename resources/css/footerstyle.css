@@ -89,3 +89,17 @@ footer .socials {
 .socials a:hover {
     opacity: 1;
 }
+
+
+
+
+
+.sourcecode {
+    text-align: center;
+    font-size: .6rem;
+    margin-top: 10px;
+    opacity: .5;
+}
+.sourcecode a {
+    text-decoration: underline;
+}

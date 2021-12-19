@@ -16,6 +16,7 @@ footer .main-content {
     margin: 5px auto;
     display: flex;
     justify-content: flex-start;
+
 }
 @media screen and (max-width: 550px) {
     footer {padding: 20px;}

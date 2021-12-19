@@ -22,20 +22,10 @@ li {
 img {
     height: 100%;
 }
-.background-one,
-.background-two {
-    z-index: 1;
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    
-}
-.background-one {
-    left: 0;
-}
-.background-two {
-    right: 0;
-}
+
+
+
+
 
 
 
@@ -45,7 +35,7 @@ img {
 header {
     height: 100vh;
     width: 100vw;
-    padding: 1px 0 0 0;
+    padding: 20vh 25vw;
     margin: -1px auto 0 auto;
     background-color: #FE7202;
 }
@@ -74,26 +64,36 @@ header {
 .intro-card {
     position: relative;
     z-index: 2;
-    width: 60vh;
+    /*width: 60vh;
     height: 40vh;
-    margin: 20vh auto;
+    margin: 20vh auto;*/
+    height: 100%;
     padding: 30px;
     color: #0C1B35;
     background-color: #04D37C;
     box-shadow: 10px 10px #0C1B35;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 @media screen and (max-width: 550px) {
     .intro-card {
-        width: 70vw;
-        height: 40vw;
+       /* width: 80vw;
+        height: 90vw;
+        max-height: 400px;
+        min-height: 300px;
+        margin: 20vh auto */
+    }
+    header {
+        padding: 40;
     }
 }
 @media screen and (max-width: 375px) {
     .intro-card {
-        margin: 25vh auto;
-        width: 88vw;
-        height: 55vw;
+        margin: 21vh auto;
+        padding: 5px;
+
     }
 }
 .github,
@@ -102,6 +102,50 @@ header {
     margin: 10px;
     display: inline-block;
 }
+.github .imgcont {
+    background: url(https://img.icons8.com/ios-filled/50/000000/github.png);
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    background-size: contain;
+}
+.email .imgcont {
+    background: url(https://img.icons8.com/ios-filled/50/000000/mail.png);
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    background-size: contain;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: snow;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.linkedin .imgcont {
+    background: url(https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png);
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    background-size: contain;
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: snow;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,18 +157,26 @@ header {
 
 
 main {
-
-    padding: 100px 50px;
+    padding: 150px 50px;
     background-color: #0C1B35;
+}
+.skill-cont {
+    background-color: rgba(255, 214, 3, 1); /* rgba(255, 214, 3, 1) */
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 50px;
+    border-radius: 10px;
 }
 
 .skill-cont h2 {
-    color: #FE7202;
+    color: black;
+    /*color: #FE7202;*/
+    margin-bottom: 25px;
     font-weight: bold;
 }
 .skill-cont .img-wrapper {
     min-height: 50px;
-    margin: 40px auto; /* you might wanna decrease this by 10px*/
+    margin: 0px auto; /* you might wanna decrease this by 10px*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -135,6 +187,7 @@ main {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    outline: 2px solid grey;
     border: 3px solid darkgrey;
     background-color: lightgrey;
     background-repeat: no-repeat;
@@ -180,23 +233,47 @@ main {
 .img-wrapper .thirteen {
     background: url(https://img.icons8.com/ios/50/000000/github--v1.png);
 }
+@keyframes imganimation {
+    50% {
+        transform: rotate(180deg);
+        background-color: tomato;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: tomato;
+    }
+}
 
 
 main .catelog-cont {
-
+    background-color: rgba(255, 214, 3, 1);
+    width: 80%;
+    border-radius: 10px;
+    margin: 125px auto 0 auto;
+    padding: 100px 0;
 }
 main .pagelink {
     display: inline-block;
     height: 350px;
     width: 300px;
-    margin: 100px 100px;
+    margin: 50px;
     padding: 10px;
     background: #FE7202;
     border: 1px solid black;
     transition: all .4s ease-in-out;
 }
 @media screen and (max-width: 550px) {
+    main {
+        padding: 150px 15px;
+    }
+    main .skill-cont {
+        width: 100%;
+    }
+    main .catelog-cont {
+        width: 100%;
+    }
     main .pagelink {
+        display: block;
         height: 275px;
         width: 225px;
         margin: 75px auto;
@@ -208,7 +285,7 @@ main .pagelink {
 }
 main .pagelink:hover {
     transform: translateY(-20px);
-    box-shadow: 10px 10px #04D37C;
+    box-shadow: 10px 10px black;
 }
 
 

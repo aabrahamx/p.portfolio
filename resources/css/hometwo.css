@@ -67,15 +67,32 @@ header {
     /*width: 60vh;
     height: 40vh;
     margin: 20vh auto;*/
-    height: 100%;
-    padding: 30px;
-    color: #0C1B35;
-    background-color: #04D37C;
-    box-shadow: 10px 10px #0C1B35;
+    
+    padding: 50px 30px;
+    color: black;
+    
+    box-shadow: -15px -15px #e96901ce; /*#e96901ce*/
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.intro-card h1,
+.intro-card h2,
+.intro-card .links-wrapper {
+    margin: 10px auto;
+}
+.intro-card h2{
+    animation: opacity-change 4s ease forwards;
+    font-weight: 800;
+}
+@keyframes opacity-change {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 550px) {
     .intro-card {
@@ -96,11 +113,21 @@ header {
 
     }
 }
+.links-wrapper {
+    cursor: pointer;
+    border-top: 2px solid #ffd603;
+}
 .github,
 .email,
 .linkedin {
-    margin: 10px;
+    width: 75px;
+    margin: 10px 0px;
+    padding: 10px 10px 7px 10px; 
     display: inline-block;
+    border-bottom: 3px solid transparent;
+    transition: all .6s ease-in-out;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
 }
 .github .imgcont {
     background: url(https://img.icons8.com/ios-filled/50/000000/github.png);
@@ -115,12 +142,7 @@ header {
     width: 25px;
     margin: auto;
     background-size: contain;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: snow;
-    border: 1px solid black;
-    border-radius: 50%;
+
 }
 .linkedin .imgcont {
     background: url(https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png);
@@ -128,14 +150,13 @@ header {
     width: 25px;
     margin: auto;
     background-size: contain;
-    background-size: 82%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: snow;
-    border: 1px solid black;
-    border-radius: 50%;
 }
-
+.github:hover, 
+.email:hover,
+.linkedin:hover {
+    border-bottom: 3px solid black;
+    background-color: #e96901;
+}
 
 
 
@@ -161,17 +182,18 @@ main {
     background-color: #0C1B35;
 }
 .skill-cont {
-    background-color: rgba(255, 214, 3, 1); /* rgba(255, 214, 3, 1) */
-    width: 50%;
+    background-color: rgb(0, 0, 0, .2); /* rgba(255, 214, 3, 1) */
+    width: 70%;
     margin: 0 auto;
     padding: 100px 50px;
     border-radius: 10px;
+    border: 1px solid snow;
 }
 
 .skill-cont h2 {
-    color: black;
-    /*color: #FE7202;*/
-    margin-bottom: 25px;
+    color: #FE7202;
+    text-decoration: underline #ffd603;
+    margin: 0 auto 25px auto;
     font-weight: bold;
 }
 .skill-cont .img-wrapper {
@@ -187,9 +209,8 @@ main {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    outline: 2px solid grey;
-    border: 3px solid darkgrey;
-    background-color: lightgrey;
+    border: 2px solid grey;
+    background-color: snow;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
@@ -246,8 +267,8 @@ main {
 
 
 main .catelog-cont {
-    background-color: rgba(255, 214, 3, 1);
-    width: 80%;
+    background-color: rgb(0, 0, 0, .2); /* #0F2242 */
+    width: 70%;
     border-radius: 10px;
     margin: 125px auto 0 auto;
     padding: 100px 0;
@@ -259,23 +280,23 @@ main .pagelink {
     margin: 50px;
     padding: 10px;
     background: #FE7202;
-    border: 1px solid black;
+    border: 2px solid snow;
     transition: all .4s ease-in-out;
 }
 @media screen and (max-width: 550px) {
     main {
-        padding: 150px 15px;
+        padding: 150px 10px;
     }
     main .skill-cont {
         width: 100%;
     }
     main .catelog-cont {
         width: 100%;
+        margin: 50px auto 0 auto;
+        padding: 25px 0;
     }
     main .pagelink {
         display: block;
-        height: 275px;
-        width: 225px;
         margin: 75px auto;
     }
 }
@@ -285,7 +306,7 @@ main .pagelink {
 }
 main .pagelink:hover {
     transform: translateY(-20px);
-    box-shadow: 10px 10px black;
+    box-shadow: 10px 10px snow;
 }
 
 
@@ -296,7 +317,7 @@ main .pagelink:hover {
     padding: 0px 20px;
     color: black;
     border: 1px solid black;
-    background-color: lightgrey;
+    background-color: #ffd603;
     display: flex;
     align-items: center;
     justify-content: center;

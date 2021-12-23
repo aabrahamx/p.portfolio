@@ -1177,24 +1177,27 @@ function r3LetterInsertion() {
     );
 };
 /*-----------------------------------------------------*/
-f1LetterInsertion();
-setTimeout(() => { r1LetterInsertion(); }, .25 * 1000);
-setTimeout(() => { o1LetterInsertion(); }, .50 * 1000);
-setTimeout(() => { n1LetterInsertion(); }, .75 * 1000);
-setTimeout(() => { t1LetterInsertion(); }, 1 * 1000);
+//f1LetterInsertion();
+setTimeout(() => { f1LetterInsertion(); }, 0 * 1000);
+setTimeout(() => { r1LetterInsertion(); }, .50 * 1000);
+setTimeout(() => { o1LetterInsertion(); }, 1 * 1000);
+setTimeout(() => { n1LetterInsertion(); }, 1.50 * 1000);
+setTimeout(() => { t1LetterInsertion(); }, 2 * 1000);
 
 
-e2LetterInsertion();
-setTimeout(() => { n2LetterInsertion(); }, .25 * 1000);
-setTimeout(() => { d2LetterInsertion(); }, .50 * 1000);
+
+setTimeout(() => { e2LetterInsertion(); }, 0 * 1000);
+setTimeout(() => { n2LetterInsertion(); }, .50 * 1000);
+setTimeout(() => { d2LetterInsertion(); }, 1 * 1000);
 
 
-d3LetterInsertion();
-setTimeout(() => { e3LetterInsertion(); }, .25 * 1000);
-setTimeout(() => { v3LetterInsertion(); }, .50 * 1000);
-setTimeout(() => { e32LetterInsertion(); }, .75 * 1000);
-setTimeout(() => { l3LetterInsertion(); }, 1 * 1000);
-setTimeout(() => { o3LetterInsertion(); }, 1.25 * 1000);
-setTimeout(() => { p3LetterInsertion(); }, 1.50 * 1000);
-setTimeout(() => { e33LetterInsertion(); }, 1.75 * 1000);
-setTimeout(() => { r3LetterInsertion(); }, 2 * 1000);
+
+setTimeout(() => { d3LetterInsertion(); }, 0 * 1000);
+setTimeout(() => { e3LetterInsertion(); }, .50 * 1000);
+setTimeout(() => { v3LetterInsertion(); }, 1.50 * 1000);
+setTimeout(() => { e32LetterInsertion(); }, 2 * 1000);
+setTimeout(() => { l3LetterInsertion(); }, 2.50 * 1000);
+setTimeout(() => { o3LetterInsertion(); }, 3 * 1000);
+setTimeout(() => { p3LetterInsertion(); }, 3.50 * 1000);
+setTimeout(() => { e33LetterInsertion(); }, 4 * 1000);
+setTimeout(() => { r3LetterInsertion(); }, 4.50 * 1000);

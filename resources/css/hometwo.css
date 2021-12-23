@@ -4,6 +4,8 @@
     outline: 0px solid white;
 }
 body {
+    position: relative;
+    z-index: 1;
     font-family: 'Outfit', sans-serif;
     text-align: center;
     background: black;
@@ -32,35 +34,57 @@ img {
 
 
 
+
 header {
     height: 100vh;
     width: 100vw;
     padding: 20vh 25vw;
-    margin: -1px auto 0 auto;
     background-color: #FE7202;
 }
-/*.svg-cont {
+
+
+header .svg-cont {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100%;
-    height: 100%;
-    animation: svganimation 10s ease-in-out infinite;
-}
-.svg-cont img {
+    background-size: contain;
+    background-repeat: repeat-y;
     width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    max-height: 100vh;
+    animation: svganimation 6s linear 2.75s forwards;
+    overflow: hidden;
 }
 @keyframes svganimation {
     0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(.95);
-    }   
+        transform: scale(1.25);
+    }  
     100% {
         transform: scale(1);
     }
-}*/
+}
+@media screen and (min-width: 425px) {
+    header #svg-cont-mobile {
+        display: none;
+    }
+    header #svg-cont-desktop {
+        display: block;
+        background-image: url('../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg')
+
+    }
+}
+@media screen and (max-width: 425px) {
+    header #svg-cont-desktop {
+        display: none;
+    }
+    header #svg-cont-mobile {
+        display: block;
+        background-image: url('../img/header-svg-mobile.svg')
+    }
+}
+
+
 .intro-card {
     position: relative;
     z-index: 2;
@@ -70,8 +94,8 @@ header {
     
     padding: 50px 30px;
     color: black;
-    
-    box-shadow: -15px -15px #e96901ce; /*#e96901ce*/
+    background-color: inherit;
+    box-shadow: -12.5px -12.5px #e96901; /*#e96901ce*/
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -88,7 +112,7 @@ header {
 }
 @keyframes opacity-change {
     0% {
-        opacity: 0;
+        opacity: .5;
     }
     100% {
         opacity: 1;
@@ -115,7 +139,7 @@ header {
 }
 .links-wrapper {
     cursor: pointer;
-    border-top: 2px solid #ffd603;
+    border-top: 2px solid black;
 }
 .github,
 .email,
@@ -125,7 +149,7 @@ header {
     padding: 10px 10px 7px 10px; 
     display: inline-block;
     border-bottom: 3px solid transparent;
-    transition: all .6s ease-in-out;
+    transition: all .3s linear;
     /*border-top-left-radius: 10px;
     border-top-right-radius: 10px;*/
 }
@@ -155,7 +179,7 @@ header {
 .email:hover,
 .linkedin:hover {
     border-bottom: 3px solid black;
-    background-color: #e96901;
+    background-color: #e96901; /*#e96901*/
 }
 
 
@@ -178,22 +202,38 @@ header {
 
 
 main {
-    padding: 150px 50px;
+    position: relative;
+    z-index: 2;
+    padding: 300px 50px 150px 50px;
     background-color: #0C1B35;
+    border-top: 1px solid snow;
 }
+/*main .style-svg-cont {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -0vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/orange\ strip.svg');
+    z-index: 5; 
+}*/
 .skill-cont {
     background-color: rgb(0, 0, 0, .2); /* rgba(255, 214, 3, 1) */
     width: 70%;
     margin: 0 auto;
     padding: 100px 50px;
-    border-radius: 10px;
-    border: 1px solid snow;
+    border-radius: 5px;
+    border: 1px solid #FE7202;
 }
 
 .skill-cont h2 {
+    width: 50%;
+    line-height: 75px;
     color: #FE7202;
-    text-decoration: underline #ffd603;
-    margin: 0 auto 25px auto;
+    border-bottom: 2px solid snow;
+    /*text-decoration: underline snow;*/
+    margin: 0px auto 25px auto;
     font-weight: bold;
 }
 .skill-cont .img-wrapper {
@@ -210,7 +250,7 @@ main {
     width: 40px;
     border-radius: 50%;
     border: 2px solid grey;
-    background-color: snow;
+    background-color: lightgrey;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
@@ -268,8 +308,9 @@ main {
 
 main .catelog-cont {
     background-color: rgb(0, 0, 0, .2); /* #0F2242 */
+    border: 1px solid #FE7202;
     width: 70%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 125px auto 0 auto;
     padding: 100px 0;
 }
@@ -280,7 +321,7 @@ main .pagelink {
     margin: 50px;
     padding: 10px;
     background: #FE7202;
-    border: 2px solid snow;
+    border: 1px solid black;
     transition: all .4s ease-in-out;
 }
 @media screen and (max-width: 550px) {
@@ -305,8 +346,8 @@ main .pagelink {
 
 }
 main .pagelink:hover {
-    transform: translateY(-20px);
-    box-shadow: 10px 10px snow;
+    transform: translateY(10px);
+    box-shadow: -10px -10px #e96901;
 }
 
 
@@ -326,11 +367,101 @@ main .pagelink:hover {
     margin-left: 10px;
 }
 .pagelink .svg-cont {
-    width: 80%;
-    height: 80%;
+    width: 225px;
+    height: 225px;
+    background-color: #0C1B35;
+    border-radius: 50%;
     margin: 20px auto;
-    border: 1px solid white;
+    border: 4px solid snow;
 }
 .pagelink .svg-cont img {
-    width: 100%;
+    width: 130%;
+    margin: 0 auto;
+    position: relative;
+    left: -15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pageloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1001;
+    background-color: #fe7203;
+    animation: pageloader 3s linear forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes pageloader {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+.loader-1,
+.loader-2,
+.loader-3 {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    outline: none;
+}
+@keyframes loaderanimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.loader-1 {
+    animation: loaderanimation 1s ease-in-out .33s infinite;
+    background-color: #0C1B35;
+}
+.loader-2 {
+    animation: loaderanimation 1s ease-in-out .66s infinite;
+    background-color: #04d37c;
+}
+.loader-3 {
+    animation: loaderanimation 1s ease-in-out .99s infinite;
+    background-color: #ffd603;
 }

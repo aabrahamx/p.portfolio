@@ -6,8 +6,8 @@
 body {
     font-family: 'Outfit', sans-serif;
     text-align: center;
-    background-color: #FE7202;
-    background-image: url('../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg');
+    background-color: #0c1b35;
+    /*background-image: url('../img/dark blue & lightgrey spots 4 background (3).svg');*/
     background-size: 50%;
 }
 @media screen and (max-width: 550px) {
@@ -42,11 +42,17 @@ img {
 header {
     height: 100vh;
     width: 100vw;
-    padding-top: 100px;
+    padding: 0 7.25px;
+    padding-top: 10%;
+    background-color: #fe7203;
 }
 header .intro-card {
-    width: 60%;
-    height: 50%;
+    width: 90%;
+    min-width: 310px;
+    max-width: 800px;
+    height: auto;
+    min-height: 300px;
+    max-height: 800px;
     margin: 0 auto;
     color: black;
     border: 1px solid black;
@@ -146,48 +152,33 @@ header .linkedin .imgcont {
 
 
 main {
-    position: relative;
-    z-index: 2;
     padding: 250px 50px;
-
-
 }
-/*main .style-svg-cont {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: -0vh;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../img/orange\ strip.svg');
-    z-index: 5; 
-}*/
 .skill-cont {
-    background-color: #e96901; /* rgba(255, 214, 3, 1) */
     width: 70%;
     margin: 0 auto;
     margin-bottom: 250px;
     padding: 100px 50px;
     border-radius: 5px;
-    border-bottom: 10px solid black;
+    border: 1px solid black;
+    border-bottom: 10px solid lightgrey;
+    background-color: #e96901;
 }
-
 .skill-cont h2 {
     width: 50%;
+    margin: auto;
     line-height: 75px;
-    color: black;
-    border-bottom: 2px solid snow;
-    /*text-decoration: underline snow;*/
-    margin: 0px auto 25px auto;
+    margin-bottom: 25px;
+    border-bottom: 2px solid bla;
     font-weight: bold;
+    color: black;
 }
 .skill-cont .img-wrapper {
     min-height: 50px;
-    margin: 0px auto; /* you might wanna decrease this by 10px*/
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 .skill-cont .img-wrapper .img-cont {
     margin: 7px 10px; /* this affects 7 lines above */
@@ -239,21 +230,12 @@ main {
 .img-wrapper .thirteen {
     background: url(https://img.icons8.com/ios/50/000000/github--v1.png);
 }
-@keyframes imganimation {
-    50% {
-        transform: rotate(180deg);
-        background-color: tomato;
-    }
-    100% {
-        transform: rotate(360deg);
-        background-color: tomato;
-    }
-}
+
 
 
 main .catelog-cont {
     background-color: #e96901; /* #0F2242 */
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #0c1b35;
     width: 70%;
     border-radius: 5px;
     margin: 125px auto 0 auto;
@@ -291,8 +273,8 @@ main .pagelink {
 
 }
 main .pagelink:hover {
-    transform: translateY(10px);
-    box-shadow: -10px -10px #e96901;
+    transform: translate(10px, 10px);
+    box-shadow: -10px -10px #0c1b35;
 }
 
 

@@ -154,6 +154,8 @@ header .linkedin .imgcont {
 main {
     padding: 250px 50px;
     background-color: #fe7203;
+    background-image: url(../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg);
+    background-position: center;
 }
 .skill-cont {
     width: 70%;

@@ -153,6 +153,7 @@ header .linkedin .imgcont {
 
 main {
     padding: 250px 50px;
+    background-color: #fe7203;
 }
 .skill-cont {
     width: 70%;
@@ -160,8 +161,9 @@ main {
     margin-bottom: 250px;
     padding: 100px 50px;
     border-radius: 5px;
-    border: 1px solid black;
-    border-bottom: 10px solid lightgrey;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 10px solid #0c1b35;
     background-color: #e96901;
 }
 .skill-cont h2 {
@@ -238,6 +240,8 @@ main .catelog-cont {
     border-bottom: 10px solid #0c1b35;
     width: 70%;
     border-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin: 125px auto 0 auto;
     padding: 100px 0;
 }

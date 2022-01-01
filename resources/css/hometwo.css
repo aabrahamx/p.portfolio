@@ -4,17 +4,21 @@
     outline: 0px solid white;
 }
 body {
-    position: relative;
-    z-index: 1;
     font-family: 'Outfit', sans-serif;
     text-align: center;
-    background: #FE7202;
-    color: lightgrey;
+    background-color: #0c1b35;
+    /*background-image: url('../img/dark blue & lightgrey spots 4 background (3).svg');*/
+    background-size: 50%;
+}
+@media screen and (max-width: 550px) {
+    body {
+        background-size: 110%;
+    }
 }
 a {
+    text-decoration: none;
     color: inherit;
     cursor: pointer;
-    text-decoration: none;
 }
 ul,
 li {
@@ -38,72 +42,32 @@ img {
 header {
     height: 100vh;
     width: 100vw;
-    padding: 20vh 25vw;
-    background-color: #FE7202;
+    padding: 0 7.25px;
+    padding-top: 10%;
+    background-color: #fe7203;
+    background-image: url('../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg');
 }
-
-
-header .svg-cont {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: contain;
-    background-repeat: repeat-y;
-    width: 100%;
-    max-width: 100vw;
-    height: 100%;
-    max-height: 100vh;
-    animation: svganimation 6s linear 2.75s forwards;
-    overflow: hidden;
-}
-@keyframes svganimation {
-    0% {
-        /*transform: scale(1.25);*/
-        background-size: 120%;
-        background-position: center;
-    }  
-    100% {
-        /*transform: scale(1);*/
-        background-size: 100%;
-        background-position: center;
-    }
-}
-@media screen and (min-width: 425px) {
-    header #svg-cont-mobile {
-        display: none;
-    }
-    header #svg-cont-desktop {
-        display: block;
-        background-image: url('../img/dark\ spots:transparent\ background.svg');
-
-    }
-}
-@media screen and (max-width: 425px) {
-    header #svg-cont-desktop {
-        display: none;
-    }
-    header #svg-cont-mobile {
-        display: block;
-        background-image: url('../img/header-svg-mobile.svg');
-    }
-}
-
-
-.intro-card {
-    position: relative;
-    z-index: 2;
-    /*width: 60vh;
-    height: 40vh;
-    margin: 20vh auto;*/
-    
-    padding: 50px 30px;
+header .intro-card {
+    width: 90%;
+    min-width: 310px;
+    max-width: 800px;
+    height: auto;
+    min-height: 300px;
+    max-height: 800px;
+    margin: 0 auto;
     color: black;
-    background-color: inherit;
-    box-shadow: -12.5px -12.5px #e96901; /*#e96901ce*/
     border: 1px solid black;
+    background-color: #FE7202;
+    box-shadow: -12.5px -12.5px #e96901;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@media screen and (max-width: 550px) {
+    header .intro-card {
+        margin: 21vh auto;
+        padding: 5px;
+    }
 }
 .intro-card h1,
 .intro-card h2,
@@ -111,7 +75,7 @@ header .svg-cont {
     margin: 10px auto;
 }
 .intro-card h2{
-    animation: opacity-change 4s ease forwards;
+    animation: opacity-change 4s linear 3s forwards;
     font-weight: 800;
 }
 @keyframes opacity-change {
@@ -122,75 +86,53 @@ header .svg-cont {
         opacity: 1;
     }
 }
-@media screen and (max-width: 550px) {
-    .intro-card {
-       /* width: 80vw;
-        height: 90vw;
-        max-height: 400px;
-        min-height: 300px;
-        margin: 20vh auto */
-    }
-    header {
-        padding: 40;
-    }
-}
-@media screen and (max-width: 375px) {
-    .intro-card {
-        margin: 21vh auto;
-        padding: 5px;
 
-    }
-}
-.links-wrapper {
-    cursor: pointer;
+.intro-card .links-wrapper {
     border-top: 2px solid black;
+    cursor: pointer;
 }
-.github,
-.email,
-.linkedin {
+header .links-wrapper .github,
+header .links-wrapper .email,
+header .links-wrapper .linkedin {
     width: 75px;
-    margin: 10px 0px;
-    padding: 10px 10px 7px 10px; 
+    margin: 10px auto;
+    padding: 10px 10px 5px 10px; 
     display: inline-block;
     border-bottom: 3px solid transparent;
     transition: all .3s linear;
-    /*border-top-left-radius: 10px;
-    border-top-right-radius: 10px;*/
 }
-.github .imgcont {
-    background: url(https://img.icons8.com/ios-filled/50/000000/github.png);
-    height: 25px;
-    width: 25px;
-    margin: auto;
-    background-size: contain;
-}
-.email .imgcont {
-    background: url(https://img.icons8.com/ios-filled/50/000000/mail.png);
-    height: 25px;
-    width: 25px;
-    margin: auto;
-    background-size: contain;
-
-}
-.linkedin .imgcont {
-    background: url(https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png);
-    height: 25px;
-    width: 25px;
-    margin: auto;
-    background-size: contain;
-}
-.github:hover, 
-.email:hover,
-.linkedin:hover {
+header .links-wrapper .github:hover,
+header .links-wrapper .email:hover,
+header .links-wrapper .linkedin:hover {
     border-bottom: 3px solid black;
-    background-color: #e96901; /*#e96901*/
+    background-color: #e96901;
 }
+header .github .imgcont,
+header .email .imgcont,
+header .linkedin .imgcont {
+    height: 25px;
+    width: 25px;
+    margin: auto;
+}
+header .github .imgcont {
+    background: url(https://img.icons8.com/ios-filled/50/000000/github.png);
+    background-size: contain;
+}
+header .email .imgcont {
+    background: url(https://img.icons8.com/ios-filled/50/000000/mail.png);
+    background-size: contain;
+}
+header .linkedin .imgcont {
+    background: url(https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png);
+    background-size: contain;
+}
+
 .arrowimg {
-    height: 40px;
-    margin: 150px auto;
+    height: 80px;
+    width: 80px;
+    padding: 25px;
+    margin: 100px auto;
     background: #FE7202;
-    position: relative;
-    z-index: 5;
 }
 
 
@@ -211,58 +153,45 @@ header .svg-cont {
 
 
 main {
-    position: relative;
-    z-index: 2;
     padding: 250px 50px;
-    background-color: #FE7202;
+    background-color: #fe7203;
     background-image: url('../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg');
-    background-size: contain;
-
+    background-position: center;
 }
-/*main .style-svg-cont {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: -0vh;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../img/orange\ strip.svg');
-    z-index: 5; 
-}*/
 .skill-cont {
-    background-color: #e96901; /* rgba(255, 214, 3, 1) */
     width: 70%;
     margin: 0 auto;
     margin-bottom: 250px;
     padding: 100px 50px;
     border-radius: 5px;
-    border-bottom: 10px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 10px solid #0c1b35;
+    background-color: #e96901;
 }
-
 .skill-cont h2 {
     width: 50%;
+    margin: auto;
     line-height: 75px;
-    color: black;
-    border-bottom: 2px solid snow;
-    /*text-decoration: underline snow;*/
-    margin: 0px auto 25px auto;
+    margin-bottom: 25px;
+    border-bottom: 2px solid bla;
     font-weight: bold;
+    color: black;
 }
 .skill-cont .img-wrapper {
     min-height: 50px;
-    margin: 0px auto; /* you might wanna decrease this by 10px*/
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 .skill-cont .img-wrapper .img-cont {
     margin: 7px 10px; /* this affects 7 lines above */
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    border: 4px solid grey;
-    background-color: lightgrey;
+    border: 4px solid lightgrey;
+    background-color: whitesmoke;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
@@ -306,23 +235,16 @@ main {
 .img-wrapper .thirteen {
     background: url(https://img.icons8.com/ios/50/000000/github--v1.png);
 }
-@keyframes imganimation {
-    50% {
-        transform: rotate(180deg);
-        background-color: tomato;
-    }
-    100% {
-        transform: rotate(360deg);
-        background-color: tomato;
-    }
-}
+
 
 
 main .catelog-cont {
     background-color: #e96901; /* #0F2242 */
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #0c1b35;
     width: 70%;
     border-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin: 125px auto 0 auto;
     padding: 100px 0;
 }
@@ -358,8 +280,8 @@ main .pagelink {
 
 }
 main .pagelink:hover {
-    transform: translateY(10px);
-    box-shadow: -10px -10px #e96901;
+    transform: translate(10px, 10px);
+    box-shadow: -10px -10px #0c1b35;
 }
 
 

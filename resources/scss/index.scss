@@ -91,6 +91,10 @@ body {
                 .github,
                 .email,
                 .linkedin {
+                    &:hover {
+                        border-bottom: 3px solid black;
+                        background-color: #e96901;
+                    }
                     width: 75px;
                     margin: 10px auto;
                     padding: 10px 10px 5px 10px;
@@ -102,12 +106,6 @@ body {
                         width: 25px;
                         margin: auto;
                     }
-                }
-                .github:hover,
-                .email:hover,
-                .linkedin:hover {
-                    border-bottom: 3px solid black;
-                    background-color: #e96901;
                 }
             }
         }

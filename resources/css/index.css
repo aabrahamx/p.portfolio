@@ -4,18 +4,19 @@
   padding: 0;
 }
 
-img {
+body {
+  overflow-x: hidden;
+}
+body img {
   height: 100%;
   width: auto;
 }
-
-a {
+body a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
-
-ul, li {
+body ul, body li {
   list-style: none;
   padding-left: 0;
 }
@@ -150,44 +151,44 @@ body main .skill-cont .img-wrapper .img-cont {
   background-position: center;
   background-size: 70%;
 }
-body main .skill-cont .img-wrapper .img-wrapper .one {
-  background: url(https://img.icons8.com/ios/50/000000/html-5--v2.png);
+body main .skill-cont .img-wrapper .img-cont.one {
+  background-image: url("https://img.icons8.com/ios/50/000000/html-5--v2.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .two {
-  background: url(https://img.icons8.com/ios/50/000000/css3.png);
+body main .skill-cont .img-wrapper .img-cont.two {
+  background-image: url("https://img.icons8.com/ios/50/000000/css3.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .three {
-  background: url(https://img.icons8.com/ios/50/000000/javascript--v1.png);
+body main .skill-cont .img-wrapper .img-cont.three {
+  background-image: url("https://img.icons8.com/ios/50/000000/javascript--v1.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .four {
-  background: url(https://img.icons8.com/ios/50/000000/jquery.png);
+body main .skill-cont .img-wrapper .img-cont.four {
+  background-image: url("https://img.icons8.com/ios/50/000000/jquery.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .five {
-  background: url(https://img.icons8.com/ios/50/000000/sass.png);
+body main .skill-cont .img-wrapper .img-cont.five {
+  background-image: url("https://img.icons8.com/ios/50/000000/sass.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .six {
-  background: url(https://img.icons8.com/ios/50/000000/react-native--v1.png);
+body main .skill-cont .img-wrapper .img-cont.six {
+  background-image: url("https://img.icons8.com/ios/50/000000/react-native--v1.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .seven {
-  background: url(https://img.icons8.com/ios/50/000000/redux.png);
+body main .skill-cont .img-wrapper .img-cont.seven {
+  background-image: url("https://img.icons8.com/ios/50/000000/redux.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .eight {
-  background: url(https://img.icons8.com/carbon-copy/100/000000/canva.png);
+body main .skill-cont .img-wrapper .img-cont.eight {
+  background-image: url("https://img.icons8.com/carbon-copy/100/000000/canva.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .nine {
-  background: url(https://img.icons8.com/windows/64/000000/bootstrap.png);
+body main .skill-cont .img-wrapper .img-cont.nine {
+  background-image: url("https://img.icons8.com/windows/64/000000/bootstrap.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .ten {
-  background: url(https://img.icons8.com/ios/64/000000/git.png);
+body main .skill-cont .img-wrapper .img-cont.ten {
+  background-image: url("https://img.icons8.com/ios/64/000000/git.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .eleven {
-  background: url(https://img.icons8.com/ios/50/000000/figma--v1.png);
+body main .skill-cont .img-wrapper .img-cont.eleven {
+  background-image: url("https://img.icons8.com/ios/50/000000/figma--v1.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .twelve {
-  background: url(https://img.icons8.com/ios/50/000000/adobe-xd--v1.png);
+body main .skill-cont .img-wrapper .img-cont.twelve {
+  background-image: url("https://img.icons8.com/ios/50/000000/adobe-xd--v1.png");
 }
-body main .skill-cont .img-wrapper .img-wrapper .thirteen {
-  background: url(https://img.icons8.com/ios/50/000000/github--v1.png);
+body main .skill-cont .img-wrapper .img-cont.thirteen {
+  background-image: url("https://img.icons8.com/ios/50/000000/github--v1.png");
 }
 @media screen and (max-width: 550px) {
   body main .skill-cont {

@@ -9,19 +9,23 @@ $full: 100%;
     margin: 0;
     padding: 0;
 }
-img {
-    height: 100%;
-    width: auto;
+body {
+    overflow-x: hidden;
+    img {
+        height: 100%;
+        width: auto;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+    ul, li {
+        list-style: none;
+        padding-left: 0;
+    }
 }
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-ul, li {
-    list-style: none;
-    padding-left: 0;
-}
+
 
 
 // main <body> style content
@@ -159,6 +163,7 @@ body {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+
                 .img-cont {
                     margin: 7px 10px; 
                     height: 42px;
@@ -169,46 +174,47 @@ body {
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 70%;
-                }
-                .img-wrapper .one {
-                    background: url(https://img.icons8.com/ios/50/000000/html-5--v2.png);
-                }
-                .img-wrapper .two {
-                    background: url(https://img.icons8.com/ios/50/000000/css3.png);
-                }
-                .img-wrapper .three {
-                    background: url(https://img.icons8.com/ios/50/000000/javascript--v1.png);
-                }
-                .img-wrapper .four {
-                    background: url(https://img.icons8.com/ios/50/000000/jquery.png);
-                }
-                .img-wrapper .five {
-                    background: url(https://img.icons8.com/ios/50/000000/sass.png);
-                }
-                .img-wrapper .six {
-                    background: url(https://img.icons8.com/ios/50/000000/react-native--v1.png);
-                }
-                .img-wrapper .seven {
-                    background: url(https://img.icons8.com/ios/50/000000/redux.png);
-                }
-                .img-wrapper .eight {
-                    background: url(https://img.icons8.com/carbon-copy/100/000000/canva.png);
-                }
-                .img-wrapper .nine {
-                    background: url(https://img.icons8.com/windows/64/000000/bootstrap.png);
-                }
-                .img-wrapper .ten {
-                    background: url(https://img.icons8.com/ios/64/000000/git.png);
-                }
-                .img-wrapper .eleven {
-                    background: url(https://img.icons8.com/ios/50/000000/figma--v1.png);
-                }
-                .img-wrapper .twelve {
-                    background: url(https://img.icons8.com/ios/50/000000/adobe-xd--v1.png);
-                }
-                .img-wrapper .thirteen {
-                    background: url(https://img.icons8.com/ios/50/000000/github--v1.png);
-                }                
+
+                    &.one {
+                        background-image: url("https://img.icons8.com/ios/50/000000/html-5--v2.png");
+                    }
+                    &.two {
+                        background-image: url("https://img.icons8.com/ios/50/000000/css3.png");
+                    }
+                    &.three {
+                        background-image: url("https://img.icons8.com/ios/50/000000/javascript--v1.png");
+                    }
+                    &.four {
+                        background-image: url("https://img.icons8.com/ios/50/000000/jquery.png");
+                    }
+                    &.five {
+                        background-image: url("https://img.icons8.com/ios/50/000000/sass.png");
+                    }
+                    &.six {
+                        background-image: url("https://img.icons8.com/ios/50/000000/react-native--v1.png");
+                    }
+                    &.seven {
+                        background-image: url("https://img.icons8.com/ios/50/000000/redux.png");
+                    }
+                    &.eight {
+                        background-image: url("https://img.icons8.com/carbon-copy/100/000000/canva.png");
+                    }
+                    &.nine {
+                        background-image: url("https://img.icons8.com/windows/64/000000/bootstrap.png");
+                    }
+                    &.ten {
+                        background-image: url("https://img.icons8.com/ios/64/000000/git.png");
+                    }
+                    &.eleven {
+                        background-image: url("https://img.icons8.com/ios/50/000000/figma--v1.png");
+                    }
+                    &.twelve {
+                        background-image: url("https://img.icons8.com/ios/50/000000/adobe-xd--v1.png");
+                    }
+                    &.thirteen {
+                        background-image: url("https://img.icons8.com/ios/50/000000/github--v1.png");
+                    }
+                }      
             }
         }
         @media screen and (max-width: 550px) {

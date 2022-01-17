@@ -11,20 +11,49 @@ body {
     background-color: #fe7203;
     color: #0c1b35;
     font-family: 'Outfit', sans-serif;
-}
-div {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
-div img,
-div h1 {
-    margin: 10px auto;
+img {
+    height: 20px;
+    width: auto;
 }
-div img {
-    height: 100px;
-    width: 100px;
+
+
+
+
+
+
+main section {
+    width: 500px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* Need to add media query to this section */
+.sec-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e96901;
+    padding: 10px;
+}
+.sec-top h2, 
+.sec-top img {
+    display: inline-block;
+}
+.sec-low {
+    padding: 20px;
+    display: none;
+}
+section.active .sec-low { 
+    display: block;
+}
+section.active .sec-top img {
+    transform: rotate(180deg);
 }

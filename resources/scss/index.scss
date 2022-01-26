@@ -40,11 +40,15 @@ body {
         width: $full;
         background-color: #FE7203;
         background-image: url('../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
         .intro-card {
             margin: 0 auto; //delete if use flex on parent
             width: 90%;
-            height: auto; //set if flex on parent
+            height: auto; //set if use flex on parent
             min: {
                 width: 310px;
                 height: 300px;
@@ -54,7 +58,7 @@ body {
                 height: 800px;
             }
             color: black;
-            border: 1px solid black;
+            border: 2px solid black;
             background-color: #FE7203;
             box-shadow: -12.5px -12.5px #e96901;
             display: flex;
@@ -297,6 +301,7 @@ body {
         }
     }
 
+    /*
     #pageloader {
         position: fixed;
         top: 0;
@@ -353,4 +358,5 @@ body {
             }
         }
     }
+    */
 }

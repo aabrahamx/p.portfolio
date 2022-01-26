@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+body img {
+  height: 100%;
+  width: auto;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+body ul, body li {
+  list-style: none;
+  padding-left: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  color: snow;
+  background-color: #0B1B34;
+  /*
+  #pageloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1001;
+      background-color: #fe7203;
+      animation: pageloader 3s linear forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .loader-1,
+      .loader-2,
+      .loader-3 {
+          height: 15px;
+          width: 15px;
+          margin: 10px;
+          border-radius: 50%;
+          outline: none;
+      }
+      .loader-1 {
+          animation: loaderanimation 1s ease-in-out .33s infinite;
+          background-color: #0C1B35;
+      }
+      .loader-2 {
+          animation: loaderanimation 1s ease-in-out .66s infinite;
+          background-color: #04d37c;
+      }
+      .loader-3 {
+          animation: loaderanimation 1s ease-in-out .99s infinite;
+          background-color: #ffd603;
+      }
+
+
+      @keyframes pageloader {
+          0% {
+              visibility: visible;
+          }
+          100% {
+              visibility: hidden;
+          }
+      }
+      @keyframes loaderanimation {
+          0% {
+              transform: scale(1);
+          }
+          50% {
+              transform: scale(1.3);
+          }
+          100% {
+              transform: scale(1);
+          }
+      }
+  }
+  */
+}
+body header {
+  height: 100%;
+  width: 100%;
+  background-color: #FE7203;
+  background-image: url("../img/dark blue & lightgrey spots 4 background.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body header .intro-card {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  min-width: 310px;
+  min-height: 300px;
+  max-width: 800px;
+  max-height: 800px;
+  color: black;
+  border: 2px solid black;
+  background-color: #FE7203;
+  box-shadow: -12.5px -12.5px #e96901;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body header .intro-card h1,
+body header .intro-card h2,
+body header .intro-card .links-wrapper {
+  margin: 10px auto;
+}
+body header .intro-card h2 {
+  font-weight: 800;
+}
+body header .intro-card .links-wrapper {
+  border-top: 2px solid black;
+}
+body header .intro-card .links-wrapper .github .imgcont {
+  background: url(https://img.icons8.com/ios-filled/50/000000/github.png);
+  background-size: contain;
+}
+body header .intro-card .links-wrapper .email .imgcont {
+  background: url(https://img.icons8.com/ios-filled/50/000000/mail.png);
+  background-size: contain;
+}
+body header .intro-card .links-wrapper .linkedin .imgcont {
+  background: url(https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png);
+  background-size: contain;
+}
+body header .intro-card .links-wrapper .github,
+body header .intro-card .links-wrapper .email,
+body header .intro-card .links-wrapper .linkedin {
+  width: 75px;
+  margin: 10px auto;
+  padding: 10px 10px 5px 10px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s linear;
+}
+body header .intro-card .links-wrapper .github:hover,
+body header .intro-card .links-wrapper .email:hover,
+body header .intro-card .links-wrapper .linkedin:hover {
+  border-bottom: 3px solid black;
+  background-color: #e96901;
+}
+body header .intro-card .links-wrapper .github .imgcont,
+body header .intro-card .links-wrapper .email .imgcont,
+body header .intro-card .links-wrapper .linkedin .imgcont {
+  height: 25px;
+  width: 25px;
+  margin: auto;
+}
+@media screen and (max-width: 550px) {
+  body header .intro-card {
+    padding: 5px;
+  }
+}
+body header .arrowimg {
+  height: 80px;
+  width: 80px;
+  padding: 25px;
+  margin: 100px auto;
+  background: #FE7202;
+}
+body main {
+  padding: 250px 50px;
+  background-color: #FE7203;
+  background-image: url("../img/dark blue & lightgrey spots 4 background.svg");
+  background-position: center;
+}
+body main .skill-cont {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 250px;
+  padding: 100px 50px;
+  border-bottom: 10px solid black;
+  border-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #e96901;
+}
+body main .skill-cont h2 {
+  width: 50%;
+  margin: auto;
+  line-height: 75px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  color: black;
+}
+body main .skill-cont .img-wrapper {
+  min-height: 50px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main .skill-cont .img-wrapper .img-cont {
+  margin: 7px 10px;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: 4px solid lightgrey;
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+body main .skill-cont .img-wrapper .img-cont.one {
+  background-image: url("https://img.icons8.com/ios/50/000000/html-5--v2.png");
+}
+body main .skill-cont .img-wrapper .img-cont.two {
+  background-image: url("https://img.icons8.com/ios/50/000000/css3.png");
+}
+body main .skill-cont .img-wrapper .img-cont.three {
+  background-image: url("https://img.icons8.com/ios/50/000000/javascript--v1.png");
+}
+body main .skill-cont .img-wrapper .img-cont.four {
+  background-image: url("https://img.icons8.com/ios/50/000000/jquery.png");
+}
+body main .skill-cont .img-wrapper .img-cont.five {
+  background-image: url("https://img.icons8.com/ios/50/000000/sass.png");
+}
+body main .skill-cont .img-wrapper .img-cont.six {
+  background-image: url("https://img.icons8.com/ios/50/000000/react-native--v1.png");
+}
+body main .skill-cont .img-wrapper .img-cont.seven {
+  background-image: url("https://img.icons8.com/ios/50/000000/redux.png");
+}
+body main .skill-cont .img-wrapper .img-cont.eight {
+  background-image: url("https://img.icons8.com/carbon-copy/100/000000/canva.png");
+}
+body main .skill-cont .img-wrapper .img-cont.nine {
+  background-image: url("https://img.icons8.com/windows/64/000000/bootstrap.png");
+}
+body main .skill-cont .img-wrapper .img-cont.ten {
+  background-image: url("https://img.icons8.com/ios/64/000000/git.png");
+}
+body main .skill-cont .img-wrapper .img-cont.eleven {
+  background-image: url("https://img.icons8.com/ios/50/000000/figma--v1.png");
+}
+body main .skill-cont .img-wrapper .img-cont.twelve {
+  background-image: url("https://img.icons8.com/ios/50/000000/adobe-xd--v1.png");
+}
+body main .skill-cont .img-wrapper .img-cont.thirteen {
+  background-image: url("https://img.icons8.com/ios/50/000000/github--v1.png");
+}
+@media screen and (max-width: 550px) {
+  body main .skill-cont {
+    width: 100%;
+  }
+}
+body main .catelog-cont {
+  background-color: #e96901;
+  /* #0F2242 */
+  border-bottom: 10px solid #0c1b35;
+  width: 70%;
+  border-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 125px auto 0 auto;
+  padding: 100px 0;
+}
+body main .catelog-cont .pagelink {
+  display: inline-block;
+  height: 350px;
+  width: 300px;
+  margin: 50px;
+  padding: 10px;
+  background: #FE7202;
+  border: 1px solid black;
+  transition: all 0.4s ease-in-out;
+}
+body main .catelog-cont .pagelink .title {
+  width: 80%;
+  height: 15%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  color: black;
+  border: 1px solid black;
+  background-color: #ffd603;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .catelog-cont .pagelink .title img {
+  height: 25px;
+  margin-left: 10px;
+}
+body main .catelog-cont .pagelink .svg-cont {
+  width: 225px;
+  height: 225px;
+  background-color: #0C1B35;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 4px solid snow;
+}
+body main .catelog-cont .pagelink .svg-cont img {
+  width: 130%;
+  margin: 0 auto;
+  position: relative;
+  left: -15%;
+}
+body main .catelog-cont .pagelink:hover {
+  transform: translate(10px, 10px);
+  box-shadow: -10px -10px #0c1b35;
+}
+@media screen and (max-width: 550px) {
+  body main .catelog-cont .pagelink {
+    display: block;
+    margin: 75px auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  body main .catelog-cont {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    padding: 25px 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  body main {
+    padding: 150px 10px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

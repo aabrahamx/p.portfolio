@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: 0px solid red;
 }
 
 body {
@@ -36,22 +37,24 @@ body header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 5px;
 }
 body header .intro-card {
   margin: 0 auto;
-  width: 90%;
-  height: auto;
-  min-width: 310px;
-  min-height: 300px;
+  width: 90vw;
+  height: 25vw;
+  min-width: 300px;
+  min-height: 375px;
   max-width: 800px;
-  max-height: 800px;
+  max-height: 500px;
   color: black;
   border: 1px solid black;
   background-color: #FE7203;
-  box-shadow: -12.5px -12.5px #e96901;
+  /*box-shadow: -12.5px -12.5px #e96901;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: slideshadow 2s ease-in 1s forwards;
 }
 body header .intro-card h1,
 body header .intro-card h2,
@@ -92,6 +95,7 @@ body header .intro-card .links-wrapper .email:hover,
 body header .intro-card .links-wrapper .linkedin:hover {
   border-bottom: 3px solid black;
   background-color: #e96901;
+  transform: translatey(-5px);
 }
 body header .intro-card .links-wrapper .github .imgcont,
 body header .intro-card .links-wrapper .email .imgcont,
@@ -105,36 +109,31 @@ body header .intro-card .links-wrapper .linkedin .imgcont {
     padding: 5px;
   }
 }
-body header .arrowimg {
-  height: 80px;
-  width: 80px;
-  padding: 25px;
-  margin: 100px auto;
-  background: #FE7202;
-}
 body main {
-  padding: 250px 50px;
+  padding: 150px 50px 150px 50px;
   background-color: #FE7203;
   background-image: url("../img/dark blue & lightgrey spots 4 background.svg");
   background-position: center;
 }
 body main .skill-cont {
-  width: 70%;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 250px;
   padding: 100px 50px;
-  border-bottom: 10px solid black;
+  background-color: #e96901;
+  border-bottom: 10px solid #0c1b35;
   border-radius: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #e96901;
 }
 body main .skill-cont h2 {
   width: 50%;
+  min-width: 260px;
   margin: auto;
   line-height: 75px;
-  margin-bottom: 25px;
-  border-bottom: 2px solid black;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #0c1b35;
   font-weight: bold;
   color: black;
 }
@@ -195,16 +194,12 @@ body main .skill-cont .img-wrapper .img-cont.twelve {
 body main .skill-cont .img-wrapper .img-cont.thirteen {
   background-image: url("https://img.icons8.com/ios/50/000000/github--v1.png");
 }
-@media screen and (max-width: 550px) {
-  body main .skill-cont {
-    width: 100%;
-  }
-}
 body main .catelog-cont {
   background-color: #e96901;
   /* #0F2242 */
   border-bottom: 10px solid #0c1b35;
-  width: 70%;
+  width: 100%;
+  max-width: 1000px;
   border-radius: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -216,19 +211,20 @@ body main .catelog-cont .pagelink {
   height: 350px;
   width: 300px;
   margin: 50px;
-  padding: 10px;
+  padding: 15px;
   background: #FE7202;
   border: 1px solid black;
   transition: all 0.4s ease-in-out;
 }
 body main .catelog-cont .pagelink .title {
   width: 80%;
-  height: 15%;
+  height: 14%;
   margin: 0 auto;
   padding: 0px 20px;
   color: black;
   border: 1px solid black;
   background-color: #ffd603;
+  box-shadow: inset 0px 0px 5px 1px rgba(66, 89, 129, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,6 +267,15 @@ body main .catelog-cont .pagelink:hover {
 @media screen and (max-width: 550px) {
   body main {
     padding: 150px 10px;
+  }
+}
+
+@keyframes slideshadow {
+  from {
+    box-shadow: 0 0 #0c1b35;
+  }
+  to {
+    box-shadow: -13.5px -13.5px #0c1b35;
   }
 }
 

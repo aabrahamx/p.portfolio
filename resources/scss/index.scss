@@ -8,7 +8,7 @@ $full: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    outline: 0px solid red;
 }
 body {
     overflow-x: hidden;
@@ -45,26 +45,28 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 5px;
 
         .intro-card {
             margin: 0 auto; //delete if use flex on parent
-            width: 90%;
-            height: auto; //set if use flex on parent
+            width: 90vw;
+            height: 25vw; //set if use flex on parent
             min: {
-                width: 310px;
-                height: 300px;
+                width: 300px;
+                height: 375px;
             }
             max: {
                 width: 800px;
-                height: 800px;
+                height: 500px;
             }
             color: black;
             border: 1px solid black;
             background-color: #FE7203;
-            box-shadow: -12.5px -12.5px #e96901;
+            /*box-shadow: -12.5px -12.5px #e96901;*/
             display: flex;
             flex-direction: column;
             justify-content: center;
+            animation: slideshadow 2s ease-in 1s forwards;
             h1,
             h2,
             .links-wrapper {
@@ -100,6 +102,7 @@ body {
                     &:hover {
                         border-bottom: 3px solid black;
                         background-color: #e96901;
+                        transform: translatey(-5px);
                     }
                     width: 75px;
                     margin: 10px auto;
@@ -120,44 +123,40 @@ body {
                 padding: 5px;
             }
         }
-
-
-        .arrowimg {
-            height: 80px;
-            width: 80px;
-            padding: 25px;
-            margin: 100px auto;
-            background: #FE7202;
-        }        
+      
 
     }
 
     main {
-        padding: 250px 50px;
+        padding: 150px 50px 150px 50px;
         background-color: #FE7203;
         background-image: url('../img/dark\ blue\ &\ lightgrey\ spots\ 4\ background.svg');
         background-position: center;
 
         .skill-cont {
-            width: 70%;
+            width: 100%;
+            max-width: 1000px; //limits on wider screen
             margin: 0 auto;
             margin-bottom: 250px;
             padding: 100px 50px;
+            background-color: #e96901;
+
             border: {
-                bottom: 10px solid black;
+                bottom: 10px solid #0c1b35;
                 radius: 5px;
                 bottom: {
                     left-radius: 15px;
                     right-radius: 15px;
                 }
             }
-            background-color: #e96901;
+            
             h2 {
                 width: 50%;
+                min-width: 260px;
                 margin: auto;
                 line-height: 75px;
-                margin-bottom: 25px;
-                border-bottom: 2px solid black;
+                margin-bottom: 40px;
+                border-bottom: 2px solid #0c1b35;
                 font-weight: bold;
                 color: black;
             }
@@ -221,17 +220,13 @@ body {
                 }      
             }
         }
-        @media screen and (max-width: 550px) {
-            .skill-cont {
-                width: 100%;
-            }
-        }
 
 
         .catelog-cont {
             background-color: #e96901; /* #0F2242 */
             border-bottom: 10px solid #0c1b35;
-            width: 70%;
+            width: 100%;
+            max-width: 1000px;
             border-radius: 5px;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -242,18 +237,19 @@ body {
                 height: 350px;
                 width: 300px;
                 margin: 50px;
-                padding: 10px;
+                padding: 15px;
                 background: #FE7202;
                 border: 1px solid black;
                 transition: all .4s ease-in-out;
                 .title {
                     width: 80%;
-                    height: 15%;
+                    height: 14%;
                     margin: 0 auto;
                     padding: 0px 20px;
                     color: black;
                     border: 1px solid black;
                     background-color: #ffd603;
+                    box-shadow: inset 0px 0px 5px 1px rgba(66, 89, 129, 0.3);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -301,5 +297,15 @@ body {
         main {
             padding: 150px 10px;
         }
+    }
+}
+
+
+@keyframes slideshadow {
+    from {
+        box-shadow: 0 0 #0c1b35;
+    }
+    to {
+        box-shadow: -13.5px -13.5px #0c1b35;
     }
 }

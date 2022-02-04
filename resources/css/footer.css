@@ -1,5 +1,7 @@
+* {
+   /*outline: 1px solid red;*/
+}
 /* || footer-style for all html docs for this repo || */
-
 footer {
     width: 100vw;
     padding: 50px 50px 20px 50px;
@@ -7,6 +9,10 @@ footer {
     font-weight: bolder;
     background-color: black;
     color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -15,8 +21,11 @@ footer {
 /* || the upper section of footer*/
 footer .main-content {
     margin: 5px auto;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    
 
 }
 @media screen and (max-width: 550px) {
@@ -33,7 +42,7 @@ footer .main-content {
 footer .copyright-wrapper,
 footer .nav,
 footer .connect-wrapper {
-    width: 32%;
+    width: 100px;
     min-width: 150px;
 }
 footer .line,

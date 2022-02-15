@@ -58,13 +58,3 @@ section.active .sec-low {
 section.active .sec-top img {
     transform: rotate(180deg);
 }
-
-.svg {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    height: 40%;
-}
-.svg img {
-    height: 100%;
-}

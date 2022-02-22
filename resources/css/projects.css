@@ -23,12 +23,17 @@ img {
 
 
 
-
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
 main section {
-    display: inline-block;
-    width: 75px;
+    width: 65px;
     height: 400px;
     margin: auto 5px;
+    background-color: #fe7203;
     border: 1px solid #0c1b35;
     border-bottom: 5px solid #0c1b35;
     border-right: 2px solid #0c1b35;
@@ -40,7 +45,6 @@ main section {
     transition: all 1s ease-in-out;
     
 }
-
 
 
 .sec-top {
@@ -81,6 +85,9 @@ main section {
 }
 .top-content img {
     height: 200px;
+}
+.top-content p {
+    text-align: left;
 }
 .top-content a {
     color: #ffd603;
@@ -123,6 +130,14 @@ section.active .sec-top .right {
 }
 section.active {
     width: 300px;
+    height: 410px;
+}
+@media (max-width: 500px) {
+    section.active {
+        position: absolute;
+        z-index: 2;
+        transform: translateY(30px);
+    }
 }
 section.active .sec-top {
     top: 0%;

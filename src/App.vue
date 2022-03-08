@@ -21,7 +21,15 @@ import HelloWorld from '@/components/HelloWorld.vue'
   </div>
   
   <footer> 
-    <p>Copyright goes here</p>
+    <a href="mailto:abelabrahamx@gmail.com">
+      <span>Email</span>
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/>
+    </a>
+    <p>&copy Abel Abraham</p>
+    <a href="#">
+      <span>LinkedIn</span>
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/>
+    </a>
   </footer>
 
   <div class="app-background"></div>
@@ -34,6 +42,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 html, body {
   text-align: center;
   font-family: "Outfit", sans-serif;
+  color: black;
 }
 a {
   text-decoration: none;
@@ -84,6 +93,25 @@ footer {
   justify-content: space-around;
   border-top: 1px solid #e96901;
 }
+footer a {
+  height: .9rem;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  height: 100%;
+  margin-left: .25rem;
+  transition: all .9s linear;
+}
+footer a:hover > img {
+  position: relative;
+  left: 10px;
+}
+footer a:hover {
+  opacity: .8;
+}
 
 .app-background {
   position: fixed;
@@ -97,10 +125,10 @@ footer {
 }
 @keyframes svg-animation {
   0% {
-    transform: scale(1);
+    transform: scale(1.25);
   }
   100% {
-    transform: scale(1.3);
+    transform: scale(1);
   }
 }
 

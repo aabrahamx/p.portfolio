@@ -40,11 +40,7 @@ import TheWelcome from '@/components/TheWelcome.vue'
           </a>
           <a class="email" href="mailto:abelabrahamx@gmail.com">
             <div class="imgcont"></div>
-            <p>Email</p>
-          </a>
-          <a class="linkedin" href="https://www.linkedin.com/in/abelg939/">
-            <div class="imgcont"></div>
-            <p>LinkedIn</p>
+            <p>CodePen</p>
           </a>
         </div>
       </div>
@@ -105,11 +101,7 @@ main > div {
   background-size: contain;
 }
 .intro-card .links-wrapper .email .imgcont {
-  background: url(https://img.icons8.com/ios-filled/50/000000/mail.png);
-  background-size: contain;
-}
-.intro-card .links-wrapper .linkedin .imgcont {
-  background: url(https://img.icons8.com/ios-filled/50/000000/linkedin-circled.png);
+  background: url(https://img.icons8.com/ios-filled/50/000000/codepen.png);
   background-size: contain;
 }
 .intro-card .links-wrapper .github,

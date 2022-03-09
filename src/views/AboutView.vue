@@ -6,7 +6,9 @@
   <div class="wrapper">
     <div>
       <div class="selfie">
+        <div>
 
+        </div>
       </div>
       <div class="about-me">
         <p>
@@ -15,13 +17,16 @@
       </div>
       <div class="stacks">
         <h3>Technologies</h3>
-        <p>
-          <span class="html lan">HTML5</span>
-          <span class="css lan ">CSS</span>
-          <span class="sass lan">SASS</span>
-          <span class="js lan">JavaScript ES6+</span>
-          <span></span>
-        </p>
+        <div>
+          <div class="html lan">HTML5</div>
+          <div class="css lan ">CSS</div>
+          <div class="sass lan">SASS</div>
+          <div class="js lan">JavaScript ES6+</div>
+          <div class="ts lan">TypeScript</div>
+          <div class="vue lan">Vue</div>
+          <div class="react lan">React</div>
+          <div></div>
+        </div>
       </div>
     </div>
   </div>
@@ -50,16 +55,44 @@
     width: 120px;
     margin: 1rem auto;
     border-radius: 50%;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .selfie > div {
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url(../assets/selfie.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(8deg);
   }
   .about-me {
     margin: 1rem auto;
   }
   .stacks {
     margin: 1rem auto;
+    width: 100%;
+    max-width: 300px;
+  }
+  .stacks h3 {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid black;
+  }
+  .stacks > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .lan {
-    margin: 1rem .25rem;
+    margin: .25rem;
     padding: .15rem .5rem;
     border-radius: .6rem;
     font-size: .75rem;

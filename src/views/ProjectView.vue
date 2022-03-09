@@ -15,19 +15,23 @@ document.query
             </div>
             <div id="js">
                 <div class="circle js"></div>
-                <p>JavaScript</p>
+                <p>JS</p>
             </div>
             <div id="ts">
                 <div class="circle ts"></div>
-                <p>TypeScript</p>
+                <p>TS</p>
             </div>
             <div id="html">
                 <div class="circle html"></div>
                 <p>HTML5</p>
             </div>
-            <div id="css-sass">
-                <div class="circle css-sass"></div>
-                <p>CSS/SASS</p>
+            <div id="css">
+                <div class="circle css"></div>
+                <p>CSS</p>
+            </div>
+            <div id="sass">
+                <div class="circle sass"></div>
+                <p>SASS</p>
             </div>
             <div id="design-proto">
                 <div class="circle design-proto"></div>
@@ -117,6 +121,7 @@ document.query
 }
 .wrapper {
     width: 100%;
+    max-width: 800px;
     height: 90%;
     margin: .5rem;
     padding: 1rem;
@@ -130,7 +135,6 @@ document.query
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: #e96901;
     background-color: whitesmoke;
     border-bottom: 1px solid black;
 }
@@ -139,6 +143,7 @@ document.query
     font-size: 0.75rem;
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 .circle-cont {
     display: flex;
@@ -153,15 +158,15 @@ document.query
     border-radius: 50%;
 }
 
-
 .project-cont {
     height: 85%;
     overflow-y: scroll;
 }
+
 .project {
-    width: 100%;
+    width: 94%;
     max-width: 600px;
-    height: 250px;
+    height: 225px;
     border: 1px solid black;
     margin: 1rem auto;
     background-color: #fe7203;
@@ -174,6 +179,7 @@ document.query
     overflow: hidden;
     display: flex;
 }
+
 .project > div:hover {
     transform: translate(10px, 10px);
     border: 1px solid black;

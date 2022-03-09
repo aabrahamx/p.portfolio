@@ -63,7 +63,7 @@ a {
 header {
   height: 6vh;
   width: 100%;
-  padding: .5rem 2rem;
+  padding: .5rem 1rem;
   background-color: #fe7203;
   display: flex;
   justify-content: space-between;
@@ -75,6 +75,10 @@ header a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
+  transition: opacity .4rem linear;
+}
+header a:hover {
+  opacity: .7;
 }
 /* -- header end -- */
 

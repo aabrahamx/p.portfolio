@@ -6,7 +6,9 @@ import HelloWorld from '@/components/HelloWorld.vue'
 <template>
 
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.png" width="30" height="30" />
+    <RouterLink to="/">
+      <img alt="Vue logo" class="logo" src="@/assets/logo.png" width="30" height="30" />
+    </RouterLink>
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -84,9 +86,7 @@ header a:hover {
 
 .router-wrapper {
   height: 88vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 footer {
   background-color: #fe7203;
@@ -125,7 +125,7 @@ footer a:hover {
   z-index: -1;
   background-image: url(@/assets/spots.svg);
   background-color: #fe7203;
-  animation: svg-animation 10s linear 1s forwards;
+  animation: svg-animation 10s linear forwards;
 }
 @keyframes svg-animation {
   0% {

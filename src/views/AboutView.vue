@@ -11,6 +11,7 @@
         </div>
       </div>
       <div class="about-me">
+        <h3>About Me</h3>
         <p>
           Hello, Abel here. I am a freelance front-end developer based out of KS. Currently providing design and custom functionality services to small businesses using CMS to maintain and grow their business. I am a dedicated developer who enjoys learning new languages and frameworks.    Although I want to specialize in the front-end, I am taking a back-end course path to help me understand the processes needed in the backend.  In my free time, I like to watch football(soccer), go out for some walks in nature and photography. 
         </p>
@@ -55,8 +56,7 @@
     width: 120px;
     margin: 1rem auto;
     border-radius: 50%;
-    background-color: whitesmoke;
-    border: 1px solid black;
+    background-color: #fe7203;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,6 @@
     height: 90%;
     width: 90%;
     border-radius: 50%;
-    border: 1px solid black;
     background-image: url(../assets/selfie.jpg);
     background-size: cover;
     background-position: center;
@@ -78,12 +77,19 @@
   .stacks {
     margin: 1rem auto;
     width: 100%;
-    max-width: 300px;
   }
   .stacks h3 {
     font-weight: bold;
     margin-bottom: .5rem;
+    margin-top: 1rem;
     border-bottom: 1px solid black;
+    text-align: left;
+  }
+  .about-me h3 {
+    border-bottom: 1px solid black;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    text-align: right;
   }
   .stacks > div {
     display: flex;
@@ -94,7 +100,8 @@
   .lan {
     margin: .25rem;
     padding: .15rem .5rem;
-    border-radius: .6rem;
+    border-radius: 1rem;
     font-size: .75rem;
+    font-weight: bolder;
   }
 </style>

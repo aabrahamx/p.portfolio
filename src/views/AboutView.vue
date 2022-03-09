@@ -16,10 +16,10 @@
       <div class="stacks">
         <h3>Technologies</h3>
         <p>
-          <span>HTML5</span>
-          <span>CSS</span>
-          <span>Sass</span>
-          <span>JavaScript ES6+</span>
+          <span class="html lan">HTML5</span>
+          <span class="css lan ">CSS</span>
+          <span class="sass lan">SASS</span>
+          <span class="js lan">JavaScript ES6+</span>
           <span></span>
         </p>
       </div>
@@ -28,6 +28,7 @@
 </template>
 
 <style scoped>
+  @import '../assets/stacks-bg.css';
   * {
     color: #0c1b35;
   }
@@ -41,7 +42,7 @@
   }
   .wrapper > div {
     max-width: 600px;
-    padding: 1rem;
+    padding: 1.25rem 1.75rem;
     background-color: #e96901;
   }
   .selfie {
@@ -56,5 +57,11 @@
   }
   .stacks {
     margin: 1rem auto;
+  }
+  .lan {
+    margin: 1rem .25rem;
+    padding: .15rem .5rem;
+    border-radius: .6rem;
+    font-size: .75rem;
   }
 </style>

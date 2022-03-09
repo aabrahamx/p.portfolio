@@ -34,7 +34,7 @@ document.query
                 <p>Design Prototype</p>
             </div>
         </div>
-        <div class="project-continer">
+        <div class="project-cont">
             <div class="project">
                 <div id="pomodoro">
                     <div class="project-img">
@@ -109,20 +109,24 @@ document.query
 </template>
 
 <style scoped>
+
+@import '../assets/stacks-bg.css';
+
 * {
     color: #0c1b35;
 }
 .wrapper {
-    width: 90%;
+    width: 100%;
     height: 90%;
-    background-color: #fe7203;
-    overflow-y: scroll;
-    box-shadow: -10px 0px 0px 0px #0c1b35;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: #e96901; 
+    /*box-shadow: -10px 0px 0px 0px #0c1b35;*/
 }
 .stacks {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -148,37 +152,22 @@ document.query
     margin-right: 0.5rem;
     border-radius: 50%;
 }
-.react {
-    background-color: #61dbfb;
-}
-.vue {
-    background-color: #41b883;
-}
-.js {
-    background-color: #f0db4f;
-}
-.ts {
-    background-color: #007acc;
-}
-.html {
-    background-color: #000;
-}
-.css-sass {
-    background-color: #c69;
-}
-.design-proto {
-    background-color: red;
-}
 
+
+.project-cont {
+    height: 85%;
+    overflow-y: scroll;
+}
 .project {
     width: 100%;
     max-width: 600px;
     height: 250px;
     border: 1px solid black;
     margin: 1rem auto;
+    background-color: #fe7203;
 }
 .project > div {
-    background-color: #e96901;
+    background-color: #fe7203;
     width: 100%;
     height: 100%;
     transition: all 0.3s linear;

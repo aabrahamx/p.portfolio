@@ -59,7 +59,6 @@ a {
   font-weight: normal;
 }
 
-
 /* -- custom styles -- */
 /* -- header --  */
 header {
@@ -80,7 +79,7 @@ header a {
   transition: opacity .4rem linear;
 }
 header a:hover {
-  opacity: .7;
+  text-decoration: overline;
 }
 /* -- header end -- */
 
@@ -114,7 +113,7 @@ footer a:hover > img {
   left: 10px;
 }
 footer a:hover {
-  opacity: .8;
+  text-decoration: overline;
 }
 
 .app-background {

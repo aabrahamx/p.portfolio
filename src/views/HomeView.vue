@@ -149,11 +149,11 @@ import TheWelcome from '@/components/TheWelcome.vue'
 
 @keyframes slideshadow {
   from {
-    box-shadow: 0 0 #0c1b35;
+    box-shadow: 0 0 black;
     top: -20px;
   }
   to {
-    box-shadow: -13.5px -13.5px #0c1b35;
+    box-shadow: -13.5px -13.5px black;
     top: 0;
   }
 }

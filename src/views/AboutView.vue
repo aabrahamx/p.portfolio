@@ -13,7 +13,7 @@
       <div class="about-me">
         <h3>About Me</h3>
         <p>
-          Hello, Abel here. I am a freelance front-end developer based out of KS. Currently providing design and custom functionality services to small businesses using CMS to maintain and grow their business. I am a dedicated developer who enjoys learning new languages and frameworks.    Although I want to specialize in the front-end, I am taking a back-end course path to help me understand the processes needed in the backend.  In my free time, I like to watch football(soccer), go out for some walks in nature and photography. 
+          Hello, Abel here. I am a freelance front-end developer based out of KS. Currently providing design and custom functionality services to small businesses using CMS to maintain and grow their business. I am a dedicated developer who enjoys learning new languages and frameworks. In my free time, I like to watch football(soccer), photography and a nice long walk in a park. 
         </p>
       </div>
       <div class="stacks">
@@ -48,7 +48,7 @@
   }
   .wrapper > div {
     max-width: 600px;
-    padding: 1.25rem 1.75rem;
+    padding: 1.25rem 3rem;
     background-color: #e96901;
   }
   .selfie {
@@ -62,8 +62,9 @@
     justify-content: center;
   }
   .selfie > div {
-    height: 90%;
-    width: 90%;
+    height: 87.5%;
+    width: 87.5%;
+    border: 1px solid black;
     border-radius: 50%;
     background-image: url(../assets/selfie.jpg);
     background-size: cover;
@@ -103,5 +104,6 @@
     border-radius: 1rem;
     font-size: .75rem;
     font-weight: bolder;
+    background-color: whitesmoke;
   }
 </style>

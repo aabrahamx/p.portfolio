@@ -39,7 +39,7 @@ import TheWelcome from '@/components/TheWelcome.vue'
               <div class="imgcont"></div>
               <p>GitHub</p>
             </a>
-            <a class="email" href="mailto:abelabrahamx@gmail.com">
+            <a class="email" href="https://codepen.io/abelg939">
               <div class="imgcont"></div>
               <p>CodePen</p>
             </a>

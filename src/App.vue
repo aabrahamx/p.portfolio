@@ -28,7 +28,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <img src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/>
     </a>
     <p>&copy Abel Abraham</p>
-    <a href="#">
+    <a href="www.linkedin.com/in/abelg939">
       <span>LinkedIn</span>
       <img src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/>
     </a>

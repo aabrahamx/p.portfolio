@@ -177,7 +177,7 @@ document.query
     height: 230px;
     border: 1px solid black;
     margin: 1rem auto;
-    background-color: black
+    background-color: black;
 }
 .project > div {
     background-color: #fe7203;
@@ -191,7 +191,7 @@ document.query
 .project > div:hover {
     transform: translate(10px, 10px);
     outline: 1px solid black;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-img {

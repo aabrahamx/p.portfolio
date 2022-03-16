@@ -66,7 +66,7 @@
     width: 87.5%;
     border: 1px solid black;
     border-radius: 50%;
-    background-image: url(../assets/selfie.jpg);
+    background-image: url(../assets/img/myselfie.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

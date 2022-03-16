@@ -208,7 +208,7 @@ document.query
 }
 
 #pomodoro .project-img .img {
-    background-image: url(../assets/img/pomodoro.png);
+    background-image: url(../assets/img/pomodoro.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -216,13 +216,14 @@ document.query
     width: 100%;
 }
 #calculator .project-img .img {
-    background-image: url(../assets/img/calculator.png);
+    background-image: url(../assets/img/calculator.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
+/*
 #nch .project-img .img {
     background-image: url(../assets/img/nch1.png);
     background-size: 100%;
@@ -232,6 +233,7 @@ document.query
     width: 100%;
     background-color: white;
 }
+*/
 
 a {
     color: #ffd603;

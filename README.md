@@ -1,4 +1,6 @@
 # My Personal Portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4880a789-7725-4e71-8b5f-81fc7abc0b04/deploy-status)](https://app.netlify.com/sites/hopeful-easley-41f333/deploys)
+
 ---
 ## Built with 
 - Vue 3 

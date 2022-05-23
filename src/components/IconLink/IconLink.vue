@@ -19,7 +19,7 @@
 
 <template>
   <a
-    class="text-sm font-bold border icon-link bg-white/5 border-white/40"
+    class="inline-flex items-center justify-center w-32 mr-8 text-xs font-bold border rounded cursor-pointer sm:text-sm h-11 sm:h-12 sm:w-40 icon-link bg-white/5 border-white/20 opacity-80 hover:opacity-100"
     :href="props.href"
   >
     <img class="icon" :alt="props.title + 'icon'" :src="props.src" />
@@ -29,19 +29,10 @@
 
 <style scoped>
   .icon-link {
-    display: inline-flex;
-    margin-right: 2rem;
-    width: 10rem;
-    height: 3rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.25rem;
-    transition: all 0.3s linear;
-    cursor: pointer;
+    transition: background 0.3s linear, opacity 0.3s linear;
   }
 
   .icon-link:hover {
-    opacity: 1;
     background: none;
   }
 

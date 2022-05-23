@@ -7,12 +7,14 @@
     class="flex flex-col items-center justify-center w-full h-screen mb-20"
   >
     <div class="content">
-      <h1 class="font-black text-7xl">
+      <h1 class="text-5xl font-black sm:text-7xl">
         Hi, I'm <span class="text-light-yellow">Abel</span>.
       </h1>
-      <h2 class="mb-10 text-4xl font-light tracking-wide opacity-75 mt-7">
-        Front-End Developer
-      </h2>
+      <p
+        class="mb-10 tracking-wider sm:text-lg w-80 sm:w-96 mt-7 font-extralight"
+      >
+        Hello there, I am a freelance front-end developer based out of Kansas City. I enjoy working on vue.js or react.js based projects. Feel free to contact me.
+      </p>
       <IconLink
         title="GitHub"
         href="https://github.com/abelabrahamx"
